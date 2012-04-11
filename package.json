@@ -6,7 +6,7 @@
     "npm":  "1.1.x"
   },
   "dependencies": { 
-    "serveup": "~0.0.2",
+    "ace": "latest",
     "hem": "~0.1.6",
     "es5-shimify": "~0.0.1",
     "json2ify": "~0.0.1",

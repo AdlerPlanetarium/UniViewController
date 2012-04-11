@@ -5,5 +5,10 @@
   <div id='planetInfo'>
     <h1><%=@name%></h1>
     <p><%=@description%></p>
+    <ul>  
+      <li>Mass: <%=@mass%> Earths</li>
+      <li>Volume: <%=@volume%> Earths</li>
+      <li>Distance from Sun: <%=@distance%> AU </li>
+    </ul>
   </div>
 </div>

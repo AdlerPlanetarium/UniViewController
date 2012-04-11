@@ -1,0 +1,57 @@
+@import './mixin'
+
+body
+  width: 1024px
+  height: 768px
+  margin: 0px
+  padding: 0px
+  background-color: black
+  color: white
+
+#planetBar
+  width: 1024px
+  height: 58px
+  padding: 0px
+  margin: 0px
+  text-align: center
+  li
+    width: 100px
+    padding: 0px 5px 0px 5px 
+    display: inline-block
+    vertical-align: middle
+    img 
+      width: 100px
+
+@-webkit-keyframes pulse
+  from 
+    -webkit-transform: scale(1)
+  to
+    -webkit-transform: scale(1)
+  50%
+    -webkit-transform: scale(1.4)
+
+.pulse
+  -webkit-animation-name: pulse
+  -webkit-animation-duration: 4s
+  -webkit-animation-iteration-count: infinite
+  -webkit-animation-timing-function: ease-in-out
+
+#planetDetails 
+  width: 1024px
+  height: 638px
+  padding: 0px
+  margin: 0px
+  #left
+    display: inline-block
+    vertical-align: middle
+    width: 600px
+    min-height: 638px
+    img
+     margin-top: auto
+     margin-bottom: auto
+  #planetInfo
+    display: inline-block
+    vertical-align: middle
+    width: 400px
+
+

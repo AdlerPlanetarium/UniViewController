@@ -1,0 +1,9 @@
+<div id='planetDetails'>
+  <div id='left'>
+    <image src='planetImages/<%=@image%>'></image>
+  </div>
+  <div id='planetInfo'>
+    <h1><%=@name%></h1>
+    <p><%=@description%></p>
+  </div>
+</div>

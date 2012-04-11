@@ -1,0 +1,7 @@
+<ul id='planetBar'>
+  <%for planet in @planets : %>
+    <li class='planet_button' data-planetName='<%=planet.name%>' >
+      <image  src='planetImages/<%=planet.button%>'></image>
+    </li>
+  <%end%>
+</ul>

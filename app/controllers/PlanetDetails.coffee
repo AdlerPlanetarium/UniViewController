@@ -4,7 +4,6 @@ Planet = require('models/Planet')
 class PlanetDetails extends Spine.Controller
   constructor: ->
     super
-    
     @showDetails Planet.first()
     Planet.bind 'planetSelected', @showDetails
 

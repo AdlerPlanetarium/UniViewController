@@ -1,6 +1,10 @@
 {
   "name": "app",
   "version": "0.0.1",
+  "engines": {
+    "node": "0.6.x",
+    "npm":  "1.1.x"
+  },
   "dependencies": { 
     "serveup": "~0.0.2",
     "hem": "~0.1.6",

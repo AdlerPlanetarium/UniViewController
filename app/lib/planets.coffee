@@ -30,8 +30,7 @@ planets=
     volume: 1
     distance: 1
     moons: 1
-    description: "Earth (or the Earth) is the third planet from the Sun, and the densest and fifth-largest of the eight planets in the Solar System. It is also the largest of the Solar System's four terrestrial planets. It is sometimes referred to as the world, the Blue Planet,[21] or by its Latin name, Terra.[note 6]
-Earth formed approximately 4.54 billion years ago by accretion from the solar nebula, and life appeared on its surface within one billion years.[22] The planet is home to millions of species, including humans.[23] Earth's biosphere has significantly altered the atmosphere and other abiotic conditions on the planet, enabling the proliferation of aerobic organisms as well as the formation of the ozone layer which, together with Earth's magnetic field, blocks harmful solar radiation, permitting life on land.[24] The physical properties of the Earth, as well as its geological history and orbit, have allowed life to persist during this period. The planet is expected to continue supporting life for another 500 million to 2.3 billion years"
+    description: "Earth formed approximately 4.54 billion years ago by accretion from the solar nebula, and life appeared on its surface within one billion years.[22] The planet is home to millions of species, including humans.[23] Earth's biosphere has significantly altered the atmosphere and other abiotic conditions on the planet, enabling the proliferation of aerobic organisms as well as the formation of the ozone layer which, together with Earth's magnetic field, blocks harmful solar radiation, permitting life on land.[24] The physical properties of the Earth, as well as its geological history and orbit, have allowed life to persist during this period. The planet is expected to continue supporting life for another 500 million to 2.3 billion years"
 
   Mars: 
     name: "Mars"

@@ -1,6 +1,6 @@
 <div id='planetDetails'>
   <div id='left'>
-    <image src='planetImages/padded2/<%=@image%>'></image>
+    <image src='planetImages/padded/<%=@image%>'></image>
   </div>
   <div id='planetInfo'>
     <h1><%=@name%></h1>

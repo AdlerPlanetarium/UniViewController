@@ -54,6 +54,9 @@ body {
   width: 760px;
   text-align: center;
 }
+#planetDetails #left img {
+  width: 760px;
+}
 #planetDetails #planetInfo {
   width: 80%;
   margin-left: 100px;

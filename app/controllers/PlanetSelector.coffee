@@ -15,10 +15,21 @@ class PlanetSelector extends Spine.Controller
       planets: Planet.all()
 
   planetSelect:(e)=>
-    $(".planet_button img").removeClass("pulse")
-    $(e.currentTarget).find("img").addClass("pulse")
-    name = $(e.currentTarget).attr("data-planetName")
+    unless @disableSelect
+      $('#prompt').html("FLYING!!!")
+      $(".planet_button").css('opacity', "0.2")
+      @disableSelect= true 
 
-    Planet.trigger('planetSelected', Planet.findByName(name)[0])
+      setTimeout =>
+        $('#prompt').html("Click on a planet to fly there")
+        $(".planet_button").css('opacity', "1")
+        @disableSelect=false
+      ,5000
+
+      $(".planet_button img").removeClass("pulse")
+      $(e.currentTarget).find("img").addClass("pulse")
+      name = $(e.currentTarget).attr("data-planetName")
+
+      Planet.trigger('planetSelected', Planet.findByName(name)[0])
     
 module.exports = PlanetSelector

@@ -1,4 +1,6 @@
+
 <ul id='planetBar'>
+  <h2 id='prompt'> Click on a planet to fly there</h2>
   <%for planet in @planets : %>
     <li class='planet_button' data-planetName='<%=planet.name%>' >
       <image  src='planetImages/<%=planet.button%>'></image>

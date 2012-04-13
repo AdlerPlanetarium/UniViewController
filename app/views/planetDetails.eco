@@ -1,4 +1,4 @@
-<div id='planetDetails'>
+<div  class='planetInfoDisplay <%=@name%>'>
   <div id='left'>
     <image src='planetImages/padded/<%=@image%>'></image>
   </div>

@@ -21,10 +21,12 @@ class App extends Spine.Controller
       console.log planet, details
       Planet.create(details)
     
-
-    @append new PlanetDetails()
+    planetDetails = new PlanetDetails()
+    @append planetDetails
     @append new PlanetSelector()
     @append = new UniViewController()
+
+    planetDetails.selectPlanet Planet.first()
 
 
 module.exports = App

@@ -17,6 +17,9 @@ class UniViewController extends Spine.Controller
 
   selectPlanet:(planet)=>
     if @ws.readyState == 1
+      # @ws.send @commands.planets["solarsystemflyto"].join(";")
       @ws.send @commands.planets[planet.name].join(";")
+      
+      
 
 module.exports = UniViewController

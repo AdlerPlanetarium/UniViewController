@@ -9,23 +9,36 @@ class PlanetSelector extends Spine.Controller
   constructor: ->
     super
     @render()
+    @shouldReset = true  
+
+    setInterval =>
+      if @shouldReset == true 
+        console.log "resetting"
+        $(".planet_button img").removeClass("pulse")
+        Planet.trigger('planetSelected', {name: "solarsystem"})
+      else
+        @shouldReset = true 
+    , 60000
 
   render:->
     @html require('views/planetBar')
       planets: Planet.all()
 
-  planetSelect:(e)=>
-    unless @disableSelect
-      $('#prompt').html("FLYING!!!")
-      $(".planet_button").css('opacity', "0.2")
-      @disableSelect= true 
-
-      setTimeout =>
+  disableControlls: =>
+    $('#prompt').html("FLYING!!!")
+    $(".planet_button").css('opacity', "0.2")
+    @disableSelect = true 
+    setTimeout => 
         $('#prompt').html("Click on a planet to fly there")
         $(".planet_button").css('opacity', "1")
         @disableSelect=false
       ,5000
 
+  planetSelect:(e)=>
+    unless @disableSelect
+      @shouldReset   = false
+      @disableControlls()
+      
       $(".planet_button img").removeClass("pulse")
       $(e.currentTarget).find("img").addClass("pulse")
       name = $(e.currentTarget).attr("data-planetName")

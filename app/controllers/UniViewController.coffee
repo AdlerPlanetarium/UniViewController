@@ -16,7 +16,7 @@ class UniViewController extends Spine.Controller
     @ws = new WebSocket("#{config.url}:#{config.port}")
 
   selectPlanet:(planet)=>
-    console.log "sending" +@commands.planets[planet.name].join(";")
-    @ws.send @commands.planets[planet.name].join(";")
+    if @ws.readyState == 1
+      @ws.send @commands.planets[planet.name].join(";")
 
 module.exports = UniViewController

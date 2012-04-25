@@ -1,0 +1,13 @@
+<div  class='planetInfoDisplay solarsystem'>
+  <div id='left'>
+    <image style='width:620px;' src='planetImages/padded/sun.png'></image>
+  </div>
+  <div id='planetInfo'>
+    <h1>Solar system</h1>
+    <ul>  
+    </ul>
+    <p>Our solar system consists of the Sun and all the objects that orbit it. This includes Planets,
+      Asteroids, Comets, Dwarf Planets and some dust and gas. The sun is the largest thing in the Solar System containing almost 99% of all the mass! This is why it dominates everything with its gravity. Here you can see the solar system sped up so that every seccond is a year!
+    </p>
+  </div>
+</div>

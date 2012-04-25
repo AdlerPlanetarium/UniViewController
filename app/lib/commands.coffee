@@ -1,5 +1,13 @@
 commands=
   planets:
+
+    solarsystem:[
+      "eventfade.execute camera.jumpto bookmark outer fast",
+      "Mercury.prop.LabelEnabled false",
+      "Venus.prop.LabelEnabled false",
+      "Earth.prop.LabelEnabled false",
+      "Mars.prop.LabelEnabled false"
+    ]
     Mercury:[
       "Camera.flyto Mercury",
       "System.setsimulatedtimevelocity 7500"

@@ -21,5 +21,6 @@ class PlanetDetails extends Spine.Controller
   render:=>
     for planet in Planet.all()
       @append require('views/planetDetails')(planet)
+    @append require('views/solarSystemView')
     
 module.exports = PlanetDetails

@@ -44,20 +44,21 @@ body {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
 }
-#planetDetails {
+.planetInfoDisplay {
   width: 100%;
   height: 900px;
   padding: 0px;
   margin: 0px;
+  display: none;
 }
-#planetDetails #left {
+.planetInfoDisplay #left {
   width: 760px;
   text-align: center;
 }
-#planetDetails #left img {
+.planetInfoDisplay #left img {
   width: 760px;
 }
-#planetDetails #planetInfo {
+.planetInfoDisplay #planetInfo {
   width: 80%;
   margin-left: 100px;
   margin-top: -60px;

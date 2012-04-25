@@ -2,11 +2,17 @@ commands=
   planets:
 
     solarsystem:[
-      "eventfade.execute camera.jumpto bookmark outer fast",
+      "Camera.transitionspeed fast",
+      "Camera.jumpto bookmark outer now", 
       "Mercury.prop.LabelEnabled false",
       "Venus.prop.LabelEnabled false",
       "Earth.prop.LabelEnabled false",
-      "Mars.prop.LabelEnabled false"
+      "Mars.prop.LabelEnabled false",
+      "Jupiter.prop.LabelEnabled true",
+      "Saturn.prop.LabelEnabled true",
+      "Neptune.prop.LabelEnabled true",
+      "Uranus.prop.LabelEnabled true",
+      "System.setsimulatedtimevelocity 31536000"
     ]
     Mercury:[
       "Camera.flyto Mercury",

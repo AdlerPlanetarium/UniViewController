@@ -14,7 +14,8 @@ class UniViewController extends Spine.Controller
   setUpSockets:->
     config = require('lib/config')
     @ws = new WebSocket("#{config.url}:#{config.port}")
-
+    console.log "conecting to #{config.url} on port #{config.port}"
+    window.ws = @ws
   selectPlanet:(planet)=>
     if @ws.readyState == 1
       # @ws.send @commands.planets["solarsystemflyto"].join(";")
